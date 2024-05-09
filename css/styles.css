@@ -1,0 +1,132 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(main.css);
+@import url(event.css);
+@import url(end-join.css);
+@import url(explore.css);
+@import url(second.css);
+@import url(sign-up.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --green: #00798a;
+  --light-green: #bbe7ed;
+  --color-main: #212121;
+  --color-light: #707070;
+  --color-white-footer: #c5c4c4;
+  --color-light-footer: #f6f7f8;
+  --bg-red-btn: #f65858;
+
+  --fs-h1: 42px;
+  --fs-h2: 28px;
+  --fs-h3: 20px;
+  --fs-p-small: 14px;
+
+  --darkened-green: #00798ae6;
+  --dark-light-green: #97cad1e6;
+  --dark-light-green: #e32359e6;
+
+  --light-border: #dcdcdc;
+}
+body {
+  color: var(--color-main);
+  background-color: #F5F5F5;
+}
+
+.main {
+  max-width: 1512px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.container {
+  max-width: 1196px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+a {
+  color: var(--color-main);
+}
+p {
+  font-weight: 500;
+}
+.a_green {
+  color: var(--green);
+  font-weight: 500;
+}
+.small-p {
+  font-size: var(--fs-p-small);
+  color: var(--color-light);
+  font-weight: 500;
+}
+.small-up {
+  font-size: var(--fs-p-small);
+  color: var(--color-light);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn {
+  background-color: var(--green);
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: var(--fs-p-small);
+}
+.btn-red {
+  background-color: var(--bg-red-btn);
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: var(--fs-p-small);
+}
+button:hover {
+  box-shadow: 0 2px 5px #c1c1c1;
+}
+.btn:hover {
+  background-color: var(--darkened-green);
+}
+.btn-red:hover {
+  background-color: #c24367e6;
+}
+.sec_right-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+  font-size: 14px;
+  color: var(--green);
+  padding: 5px 10px 5px 18px;
+  border: 3px solid var(--green);
+  border-radius: 7px;
+  font-weight: 600;
+}
+.how_cont {
+  background-color: var(--light-green);
+}
+@media (max-width: 1400px) {
+  .main {
+    max-width: 1512px;
+  }
+  .container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <div class="main-header">
+        <div class="header">
+          <div class="header_left">
+            <a href="index.html" class="header_left-logo">
+              <img src="./icons/Vector.svg" alt="" />
+            </a>
+            <form class="header_left-form">
+              <div class="header_left-inp">
+                <img src="./icons/VectorSearch.svg" alt="img" />
+                <input
+                  class="small-p"
+                  type="text"
+                  placeholder="Search events"
+                />
+              </div>
+              <div class="header_left-inp2">
+                <input
+                  class="small-p"
+                  type="text"
+                  placeholder="Mountain View, CA"
+                />
+                <button class="header_left-btn">
+                  <img src="./icons/VectorSS.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="header_right">
+            <div class="header_right-language">
+              <img src="./icons/SVG.svg" alt="" />
+              <a class="head-a" href="#">English</a>
+            </div>
+            <div class="header_right-link">
+              <a href="#">Log in</a>
+            </div>
+            <button class="btn sign-up">Sign up</button>
+          </div>
+        </div>
+
+        <div class="header_plus">
+          <div class="header_left-inp3">
+            <div class="header_left-inp2-cont">
+              <img src="./icons/VectorSearch.svg" alt="img" />
+              <input class="small-p" type="text" placeholder="Search events" />
+            </div>
+            <button class="header_left-btn2">
+              <img src="./icons/VectorSS.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="second-container">
+          <div class="second">
+            <div class="second-left">
+              <div class="second-left_title">
+                <h1>Events near New York, NY</h1>
+                <button class="second-event">Event</button>
+                <div class="second-left_title_search">
+                  <div class="second_type">
+                    <select
+                      class="second_type-select"
+                      id="type-id"
+                      name="select-1"
+                    >
+                      <option value="Any type">Any type</option>
+                      <option value="online">Online</option>
+                      <option value="offline">Offline</option>
+                    </select>
+                  </div>
+                  <div class="second_type">
+                    <select
+                      class="second_type-select"
+                      id="distance-id"
+                      name="select-2"
+                    >
+                      <option value="Any distance">Any distance</option>
+                      <option value="5">5 km</option>
+                      <option value="10">10 km</option>
+                      <option value="15">15 km</option>
+                      <option value="25">25 km</option>
+                      <option value="50">50 km</option>
+                      <option value="75">75 km</option>
+                      <option value="100">100 km</option>
+                    </select>
+                  </div>
+                  <div class="second_type">
+                    <select
+                      class="second_type-select"
+                      id="categories-id"
+                      name="select-3"
+                    >
+                      <option value="Any categories">Any categories</option>
+                      <option value="Social Activities">
+                        Social Activities
+                      </option>
+                      <option value="Hobbies and Passions">
+                        Hobbies and Passionst
+                      </option>
+                      <option value="Health and Wellbeing">
+                        Health and Wellbeing
+                      </option>
+                      <option value="Business">Business</option>
+                      <option value="Technology">Technology</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second_flex"></div>
+          </div>
+
+          <div class="second-right">
+            <div class="second-right-container">
+              <div class="second-right-title">
+                <div class="second-right_event">
+                  <p>Find events near</p>
+                  <h3>New York, NY</h3>
+                </div>
+                <div class="second-right_js">
+                  <button class="sec_right-button second-right_js-btn">
+                    Open map
+                  </button>
+                </div>
+              </div>
+              <div class="second-right-img">
+                <iframe
+                  class="second-right_ifame"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.2333376543834!2d13.401947677199626!3d52.511116172058976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84fb0e85329a1%3A0xa141f1e83418ee88!2sIT%20Career%20Hub!5e0!3m2!1sru!2sde!4v1715207131683!5m2!1sru!2sde"
+                  width="339"
+                  height="276"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <!-- <img src="./img/map-thumbnail.png.png" alt="" /> -->
+                <button class="second-right-btn sec_right-button">
+                  <p>Browse in map</p>
+                  <div class="second-right-btn-image">
+                    <img src="./icons/expandMapIcon.svg fill.svg" alt="" />
+                  </div>
+                </button>
+                <button class="second-right-close-btn">
+                  <img src="./icons/SVG777777.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main">
+      <div class="foot_main">
+        <div class="footer_main">
+          <div class="footer_title">
+            <p>Create your own Meetup group.</p>
+            <button>Get Started</button>
+          </div>
+          <div class="footer_nav">
+            <div class="footer_nav-list">
+              <p class="footer-p">Your Account</p>
+              <a>Sign up</a>
+              <a>Log in</a>
+              <a>Help</a>
+              <a>Become an filiate</a>
+              <a></a>
+              <a></a>
+              <a></a>
+            </div>
+            <div class="footer_nav-list">
+              <p class="footer-p">Discover</p>
+              <a>Groups</a>
+              <a>Calendar</a>
+              <a>Topics</a>
+              <a>Cities</a>
+              <a>Online Events</a>
+              <a>Local Guides</a>
+              <a>Make Friends</a>
+            </div>
+            <div class="footer_nav-list">
+              <p class="footer-p">Meetup</p>
+              <a>About</a>
+              <a>Blog</a>
+              <a>Meetup Pro</a>
+              <a>Careers</a>
+              <a>Apps</a>
+              <a>Podcast</a>
+              <a></a>
+            </div>
+          </div>
+
+          <div class="footer_follow">
+            <div class="footer_web">
+              <p class="footer-p">Follow us</p>
+              <div class="footer_faceb">
+                <a href=""><img src="./icons/Vector41.svg" alt="" /></a>
+                <a href=""><img src="./icons/Vector42.svg" alt="" /></a>
+                <a href=""><img src="./icons/Vector43.svg" alt="" /></a>
+                <a href=""><img src="./icons/Vector44.svg" alt="" /></a>
+                <a href=""><img src="./icons/Vector45.svg" alt="" /></a>
+              </div>
+            </div>
+            <div class="footer_goit">
+              <img src="./icons/download_en-US.svg.svg" alt="" />
+              <img src="./icons/GroupApp.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="footer_end">
+            <a class="footer_end-p">© 2024 Meetup</a>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Do Not Sell or Share My Personal Data</p>
+            <p>Cookie Policy</p>
+            <p>Help</p>
+          </div>
+          <div class="footer_end-end">
+            <p class="footer_end-p">© 2024 Meetup</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="container-signup sign-log">
+      <form id="sign-in" novalidate>
+        <div class="field">
+          <label for="sign-in-name">Name</label>
+          <input type="text" id="sign-in-name" name="signInName" />
+        </div>
+        <div class="field">
+          <label for="sign-in-phone">Phone</label>
+          <input type="text" id="sign-in-phone" name="signInPhone" />
+        </div>
+        <div class="field">
+          <label for="sign-in-email">E-mail</label>
+          <input type="email" id="sign-in-email" name="signInEmail" />
+        </div>
+        <div class="field">
+          <label for="sign-in-password">Password</label>
+          <input type="password" id="sign-in-password" name="signInPassword" />
+        </div>
+
+        <button type="submit" id="sign-in-btn">Sing up</button>
+        <div class="error">Error</div>
+        <div class="success">Success</div>
+      </form>
+    </div>
+
+    <div id="overlay">
+      <div class="container-login sign-log">
+        <form id="login" novalidate>
+          <div class="field">
+            <label for="login-email">E-mail</label>
+            <input type="email" id="login-email" name="loginEmail" />
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="loginPassword" />
+          </div>
+
+          <button type="submit" id="login-btn">Log in</button>
+        </form>
+        <div class="error">Error</div>
+        <div class="success">Success</div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+
+<!-- <div class="second_container sec_cont-1">
+                <div class="event_grid-main-img">
+                  <img
+                    class="cont_grig-img"
+                    src="./img/event_519218942.webp.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="second_container-text">
+                  <div class="second_container-text-1">
+                    <p class="small-up small-up-plus">
+                      Mon, Mar 18 · 7:00 PM PDT
+                    </p>
+                    <h3>Day Trading Idea and Strategy</h3>
+                    <p class="small-p">Business <span class="small-p-span">(5 km)</span></p>
+                    <div class="sec_text-online">
+                      <img src="./icons/SVG51.svg" alt="" />
+                      <p>Online Event</p>
+                    </div>
+                  </div>
+
+                  <div class="event_grid-text-attendes">
+                    <p class="small-p small-p-new">99 attendees</p>
+                    <img src="./icons/VectorAttendes.svg" alt="">
+                  </div>
+                </div>
+              </div> -->
+
+<!-- <div class="second_container sec_cont-2">
+                <div class="event_grid-main-img">
+                  <img
+                    class="cont_grig-img"
+                    src="./img/event_519218942.webp.png"
+                    alt=""
+                  />
+                </div>
+                <div class="second_container-text">
+                  <div class="second_container-text-1">
+                    <p class="small-up">Mon, Mar 18 · 7:00 PM PDT</p>
+                    <h3>Day Trading Idea and Strategy</h3>
+                    <p class="small-p">Business (5 km)</p>
+                    <div class="sec_text-online">
+                      <img src="./icons/SVG51.svg" alt="" />
+                      <p>Online Event</p>
+                    </div>
+                  </div>
+
+                  <p class="sec_small-p">99 attendees</p>
+                </div>
+              </div>
+              <div class="second_container sec_cont-3">
+                <div class="event_grid-main-img">
+                  <img
+                    class="cont_grig-img"
+                    src="./img/event_519218942.webp.png"
+                    alt=""
+                  />
+                </div>
+                <div class="second_container-text">
+                  <div class="second_container-text-1">
+                    <p class="small-up">Mon, Mar 18 · 7:00 PM PDT</p>
+                    <h3>Day Trading Idea and Strategy</h3>
+                    <p class="small-p">Business (5 km)</p>
+                    <div class="sec_text-online">
+                      <img src="./icons/SVG51.svg" alt="" />
+                      <p>Online Event</p>
+                    </div>
+                  </div>
+
+                  <p class="sec_small-p">99 attendees</p>
+                </div>
+              </div>
+              <div class="second_container sec_cont-4">
+                <div class="event_grid-main-img">
+                  <img
+                    class="cont_grig-img"
+                    src="./img/event_519218942.webp.png"
+                    alt=""
+                  />
+                </div>
+                <div class="second_container-text">
+                  <div class="second_container-text-1">
+                    <p class="small-up">Mon, Mar 18 · 7:00 PM PDT</p>
+                    <h3>Day Trading Idea and Strategy</h3>
+                    <p class="small-p">Business (5 km)</p>
+                    <div class="sec_text-online">
+                      <img src="./icons/SVG51.svg" alt="" />
+                      <p>Online Event</p>
+                    </div>
+                  </div>
+
+                  <p class="sec_small-p">99 attendees</p>
+                </div>
+              </div> -->
+<!-- <div class="second_container sec_cont-5">
+                <div class="event_grid-main-img">
+                  <img
+                    class="cont_grig-img"
+                    src="./img/event_519218942.webp.png"
+                    alt=""
+                  />
+                </div>
+                <div class="second_container-text">
+                  <div class="second_container-text-1">
+                    <p class="small-up">Mon, Mar 18 · 7:00 PM PDT</p>
+                    <h3>Day Trading Idea and Strategy</h3>
+                    <p class="small-p">Business (5 km)</p>
+                    <div class="sec_text-online">
+                      <img src="./icons/SVG51.svg" alt="" />
+                      <p>Online Event</p>
+                    </div>
+                  </div>
+
+                  <p class="sec_small-p">99 attendees</p>
+                </div>
+              </div>
+              <div class="second_container sec_cont-6">
+                <div class="event_grid-main-img">
+                  <img
+                    class="cont_grig-img"
+                    src="./img/event_519218942.webp.png"
+                    alt=""
+                  />
+                </div>
+                <div class="second_container-text">
+                  <div class="second_container-text-1">
+                    <p class="small-up">Mon, Mar 18 · 7:00 PM PDT</p>
+                    <h3>Day Trading Idea and Strategy</h3>
+                    <p class="small-p">Business (5 km)</p>
+                    <div class="sec_text-online">
+                      <img src="./icons/SVG51.svg" alt="" />
+                      <p>Online Event</p>
+                    </div>
+                  </div>
+
+                  <p class="sec_small-p">99 attendees</p>
+                </div>
+              </div> -->

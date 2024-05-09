@@ -1,0 +1,243 @@
+.explore {
+  margin-top: 60px;
+  overflow: hidden;
+}
+.explore_container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+.ex-cont {
+  background-color: #f2ffff;
+  padding: 25px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.popular {
+  padding-bottom: 64px;
+}
+.popular h2 {
+  margin: 64px 0 24px;
+}
+.popular p {
+  line-height: 1.4;
+}
+.popular_round {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+.round_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.round_cont a {
+  font-weight: 600;
+}
+.round_cont img {
+  max-width: 100%;
+  height: auto;
+}
+.how {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.how_cont1 {
+  display: flex;
+  gap: 20px;
+  width: 48%;
+  padding: 32px 24px 24px 24px;
+  background-color: #f2ffff;
+}
+.how_left-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.how_left-text p {
+  color: var(--color-light);
+}
+.friendship_title {
+  margin: 60px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.friendship_title p {
+  color: var(--color-light);
+}
+.friendship_container p {
+  margin: 12px 0 16px;
+  color: var(--color-light);
+}
+.friendship_container h3 {
+  margin-top: 24px;
+}
+.friendship {
+  width: 100%;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.friendship_container-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .explore_container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .how_cont1 {
+    flex-direction: column;
+  }
+  .how_left-link {
+    display: flex;
+    align-items: center;
+  }
+  .friendship {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .popular_round {
+    padding: 0 20px;
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+  }
+  .round_cont {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .round_cont5 {
+    display: none;
+  }
+  .how {
+    flex-direction: column;
+    width: 100%;
+  }
+  .how_cont1 {
+    flex-direction: row;
+    width: 100%;
+  }
+  .friendship {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fr_cont3 {
+    display: none;
+  }
+  .friendship_container h3 {
+    font-size: 18px;
+  }
+
+  .friendship_container p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .how {
+    flex-direction: column;
+    width: 100%;
+  }
+  .how_cont1 {
+    width: 100%;
+  }
+  .friendship {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fr_cont3 {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .explore_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+@media (max-width: 430px) {
+  .explore_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+  .popular_round {
+    padding: 0 20px;
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+  }
+  .popular p {
+    font-size: 12px;
+  }
+  .round_cont img {
+    width: 95%;
+  }
+  .round_cont5 {
+    display: none;
+  }
+  .round_cont a {
+    font-size: 14px;
+  }
+  .how {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .how_cont1 {
+    width: 100%;
+  }
+  .how_cont1 img {
+    width: 25px;
+  }
+  .how_left-text h3 {
+    font-size: 14px;
+  }
+  .how_left-text p,
+  a {
+    font-size: 12px;
+  }
+  .friendship {
+    display: flex;
+    flex-direction: column;
+  }
+  .friendship_container {
+    width: 100%;
+  }
+  .friendship_container p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .friendship_title p {
+    display: none;
+  }
+  .friendship_container-img img {
+    width: 100%;
+  }
+  .ex-cont p {
+    font-size: 14px;
+  }
+}
